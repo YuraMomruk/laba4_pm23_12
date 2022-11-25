@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="menu">
+            <div class="menuImg">
+                <img src="./img/metropanel_221.png" alt="">
+            </div>
+            <div class="menuItems">
+            <div class="menuLogos">
+                <h2>Navigation</h2>
+            </div>
+                <div class="menuItem">
+                    <img src="./img/dashbord_227.png" alt=""> <p>Dashbord</p>
+                </div>
+                <div class="menuItem">
+                    <img src="./img/email_copy_230.png" alt="" id="MailImg"> <p>Emails</p>
+                </div>
+                <div class="menuItem">
+                    <img src="./img/calacdar_232.png" alt=""> <p>Calendar</p>
+                </div>
+                <div class="menuItem">
+                    <img src="./img/pages_237.png" alt=""> <p>Pages</p>
+                </div>
+                <div class="menuLogos">
+                    <h2>Featured</h2>
+                </div>
+                    <div class="menuItem">
+                        <img src="./img/charts_247.png" alt=""> <p>Charts</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/articals_249.png" alt=""> <p>Articals</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/users_252.png" alt=""> <p>Users</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/stars_255.png" alt=""> <p>Favorites</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/speed_258.png" alt=""> <p>Speed</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/setting_261.png" alt=""> <p>Settings</p>
+                    </div>
+                    <div class="menuLogos">
+                        <h2>All Others</h2>
+                    </div>
+                        <div class="menuItem">
+                            <img src="./img/revenue_269.png" alt=""> <p>Revenue</p>
+                        </div>
+                        <div class="menuItem">
+                            <img src="./img/pics_277.png" alt=""> <p>Pictures</p>
+                        </div>
+                        <div class="menuItem">
+                            <img src="./img/faqs_274.png" alt=""> <p>FAQs</p>
+                        </div>
+                        
+            </div>
+        </div>
+        <div class="row">
+            <header>
+                <div class="headerMenus">
+                <div class="MasageMenu Anim">
+                    <div class="refreshBox">
+                        <img src="./img/refresh_11.png" alt="">
+                    </div>
+                        <div class="emailBox">
+                        <img src="./img/email_copy_230.png" alt=""> 
+                        <div class="emailMasage">8</div>
+                        </div>
+                        <div class="bellBox">
+                        <img src="./img/bell_22.png" alt="">
+                        <div class="bellMasage">9</div>
+                    </div>
+                </div>
+                <div class="SerchMenu Anim">
+                    <img src="./img/search_15.png" alt="">
+                    <p>|</p>
+                </div>
+                <div class="UserMenu Anim">
+                    <img src="./img/pic_17.png" alt="" class="userPhoto">
+                    <p>John Deo</p>
+                    <img src="./img/down_40.png" alt="" class="userMenu">
+                    <img src="./img/setting_24.png" alt="" class="userSetings">
+                </div>
+            </div>
+            <div class="headerLineBox">
+                <div class="headerLine">
+                    <p class="headerLineHome"> Home ></p> <p class="LineDashboard"> Dashboard</p>
+                </div>
+            </div>
+            </header>
+
+            <br>
+            <br>
+            <div class="statisticBoxes">
+            <div class="visitorBox">
+              <div class="visitorBoxLogo"><p class="Total">TOTAL</p> <p class="Visitor">VISITOR</p></p></div>
+              <p class="totalVisitorNumber">40,600</p>
+              <div class="visitorBoxNew">
+                <p>10% New Today</p> <img src="./img/next_navi_copy_69.png" alt="">
+              </div>
+            </div>
+            <div class="visitorCenterBox">
+                <div class="visitorBoxLogo"><p class="Total">TOTAL</p> <p class="Visitor">SALE</p></p></div>
+              <p class="totalVisitorNumber">13,370</p>
+              <div class="visitorBoxNew">
+                <p>400 New Today</p> <img src="./img/next_navi_copy_69.png" alt="">
+              </div>
+            </div>
+            <div class="visitorBox">
+                <div class="visitorBoxLogo"><p class="Total">TOTAL</p> <p class="Visitor">USER</p></p></div>
+              <p class="totalVisitorNumber">15,200</p>
+              <div class="visitorBoxNew">
+                <p>470 New Today</p> <img src="./img/next_navi_copy_69.png" alt="">
+              </div>
+            </div>
+
+            </div>
+            <br>
+            <br>
+            <div class="graphLine">
+            <div class="graphBox">
+                      <canvas id="myChart" width="400px" height="150px" >
+                        
+                      </canvas> 
+                      <div class="FirstGraphText">
+                        <h2>Site_Statics</h2>
+                      </div>
+                      <div class="FirstGraphBoxes">
+                        <div class="FirstGraphBox1">Daily</div>
+                        <div class="FirstGraphBox2">Monthly</div>
+                        <div class="FirstGraphBox1">Yearly</div>
+                      </div>
+                     
+                      </div>
+            </div>
+            <br>
+            <div class="WorldSailseBox">
+                <div class="WorldMapBox" id="WorldMapBox">
+                    <div class="MapBoxTop">
+                        <p id="MapLogo">World Sales</p>
+                       <div class="Item"><div class="PurpleBox"></div><p>40%</p></div>
+                       <div class="Item"><div class="BlueBox"></div><p>12%</p></div>
+                       <div class="Item"><div class="GreenBox"></div><p>11%</p></div>
+                       <div class="Item"><div class="PinkBox"></div><p>10%</p></div>
+                       <div class="Item"><div class="YellowBox"></div><p>18%</p></div>
+                       <div class="Item"><div class="OrangeBox"></div><p>9%</p></div>
+                       <div class="MapBoxExit" id="Exit2"><img src="./img/close_copy_2_361.png" alt=""></div>
+                    </div>
+                    <br>
+                    <img src="./img/Map.png" alt="" class="WorldMapBoxImg">
+                </div>
+                <div class="ReportBox" id="ReportBox">
+                    <div class="ReportBoxLogo"><p>Site Report</p> <img src="./img/close_copy_2_361.png" alt="" class="ReportBoxExit" id="ReportBoxExit"></div>
+                    <div class="SiteReportItems">
+                        <div class="SiteReportItem">
+                           <div class="SiteReportItemText"><p class="Sales">Sales</p> <p class="SalesProsent">65%</p></div>
+                           <br>
+                           <div class="SiteReportLine"> <div class="SiteReportGreenLine"></div> </div>
+                        </div>
+                        <br>
+                        <div class="SiteReportItem">
+                            <div class="SiteReportItemText"><p class="Sales">Revnue</p> <p class="SalesProsent">88%</p></div>
+                            <br>
+                            <div class="SiteReportLine"> <div class="SiteReportYellowLine"></div> </div>
+                         </div>
+                         <br>
+                         <div class="SiteReportItem">
+                            <div class="SiteReportItemText"><p class="NewOrders">New Orders</p> <p class="NewOrdersProsent">92%</p></div>
+                            <br>
+                            <div class="SiteReportLine"> <div class="SiteReportOrangeLine"></div> </div>
+                         </div>
+                         <br>
+                         <p class="SiteReportText">It is a long established fact that a re-
+                            ader will be distracted by the 
+                            readable content of a page when 
+                            looking at its layout.<p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="UserStatisticBoxes">
+                <div class="graphBox2">
+                    <canvas id="myChart3">
+                    </canvas>
+                </div>
+                <br>
+                <br> 
+                <div class="graphBox3">
+                    <canvas id="myChart2"  ></canvas> 
+                </div>
+                
+            </div> 
+            <br>
+            <br>
+            <div class="CelendarBoxes">
+                <div class="UserCelendarMasage">
+                    <div class="UserCelendarMasageTop">
+                        <p>Calendar</p>
+                        <div class="ExitBox">
+                            <div class="Exit" id="Exit4"></div>
+                        </div>
+                    </div>
+                    <div class="UserCelendarMasageInp">
+                        <input type="text" name="" id=""  placeholder="Username">
+                        <br>
+                        <input type="text" name="" id=""  placeholder="Subject">
+                        <br>
+                        <input type="text" name="" id="BigInp"  placeholder="Massage">
+                    </div>
+                    <div class="UserCelendarButtonBox">
+                        <div class="UserCelendarMasageButton"><p>SEND</p></div>
+                    </div>
+                </div>
+              
+                    <div class="calendar">
+                      <div class="month">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">
+                          <h1></h1>
+                          <p></p>
+                        </div>
+                        <i class="fas fa-angle-right next"></i>
+                      </div>
+                      <br>
+                      <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                      </div>
+                      <div class="days"></div>
+
+                  </div>
+            </div> 
+            <br>
+            <div class="LatestArticalesBox">
+                <div class="LatestArticalesMenu">
+                    <div class="LatestArticalesMenuItem1"> <p>Latest Comments</p> </div>
+                    <div class="LatestArticalesMenuItem2"> <p>Latest Articales</p> </div>
+                    <div class="LatestArticalesMenuItem3"> <p>Newest Users</p> </div>
+                </div>
+                <div class="PersonsBox">
+                    <div class="PeopleBox">
+                    <div class="PersonBox">
+                        <img src="./img/FirstWooman.png" alt="">
+                        <div class="PersonBoxText">
+                        <div class="PersonBoxLogo"> <p class="FirstLogoItem">on</p> <p class="SecondLogoItem">Fashion News</p> <p class="ThirdLogoItem">/</p> <p class="FirstLogoItem">by</p> <p class="FourthLogoItem">Jolia</p> </div>
+                        <p class="PersonBurthday">12-11-2014</p>
+                        <br>
+                        <p class="PersonText">It is a long established fact that a reader will be distracted by the readable content of a page when 
+                            looking at its layout.</p>
+                    </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="PersonBox">
+                        <img src="./img/Man.png" alt="">
+                        <div class="PersonBoxText">
+                        <div class="PersonBoxLogo"> <p class="FirstLogoItem">on</p> <p class="SecondLogoItem">Technoloy News</p> <p class="ThirdLogoItem">/</p> <p class="FirstLogoItem">by</p> <p class="FourthLogoItem">Deo</p> </div>
+                        <p class="PersonBurthday">12-11-2014</p>
+                        <br>
+                        <p class="PersonText">It is a long established fact that a reader will be distracted by the readable content of a page when 
+                            looking at its layout.</p>
+                    </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="PersonBox">
+                        <img src="./img/Woman2.png" alt="">
+                        <div class="PersonBoxText">
+                        <div class="PersonBoxLogo"> <p class="FirstLogoItem">on</p> <p class="SecondLogoItem">Fashion New</p> <p class="ThirdLogoItem">/</p> <p class="FirstLogoItem">by</p> <p class="FourthLogoItem">Jolia</p> </div>
+                        <p class="PersonBurthday">12-11-2014</p>
+                        <br>
+                        <p class="PersonText">It is a long established fact that a reader will be distracted by the readable content of a page when 
+                            looking at its layout.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>   
+        </div>
+        </div>
+        <footer><div class="footerTextBox"><p class="FirstFooterText">Copy Rights 2014.</p> <p class="TwoFooterText">CreativeCrunk</p></div></footer>
+        <script src="js/app.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+        <script>
+  const labels = [
+  '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Visitors',
+      backgroundColor: 'red',
+      borderColor: 'gold',
+      labels:[0,1,2,3,5,6],
+      data: [25,30, 27, 33, 30, 37,35,20],
+      fill: false,
+      tension:0.1,
+
+      
+    },{
+      label: 'Sales',
+      backgroundColor: 'pink',
+      borderColor: '#0cff00',
+      color:'black',
+      labels:[0,1,2,3,5,6],
+      data: [10,22, 13,40,20, 30,47,30],
+      fill: false,
+      tension:0.1
+    }]
+  };
+  
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+  
+
+  
+//Другий графік
+
+const labels2 = [
+  '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+  ];
+
+  const data2 = {
+    labels: labels2,
+    datasets: [{
+      label: 'Visitors',
+      backgroundColor: '#34495e',
+      borderColor: 'gold',
+      labels:[0,1,2,3,5,6,7,8],
+      data: [90,80,92, 80, 88, 88, 92,88,80,0],
+      fill: false,
+      tension:0.1,
+
+      
+    },{
+      label: 'Sales',
+      backgroundColor: '#1efe00',
+      borderColor: '#0cff00',
+      color:'black',
+      labels:[0,1,2,3,4,5,6,7,8],
+      data: [72,54,72,88,72,40,86,72,75],
+      fill: false,
+      tension:0.1
+    }]
+  };
+  
+
+  const config2 = {
+    type: 'bar',
+    data: data2,
+    options:{
+      maintainAspectRatio:false,
+  scales:{
+   yAxes:[{
+       display:true,
+       beginAtZero:true,
+   }],
+   xAxes:[{
+       display:false,
+   }]
+  }
+}
+  };
+  const myChart2 = new Chart(
+    document.getElementById('myChart2'),
+    config2
+  );
+  
+//Третій графік
+
+
+
+const labels3 = [
+  '0',
+    '1',
+    '2',
+    '3',
+  
+  ];
+const data3 = {
+labels: labels3,
+datasets: [{
+  label: 'Visitors',
+  backgroundColor: '#f1c40f',
+  borderColor: 'white',
+  labels:[0,1,2,3,],
+  data: [15,20, 15, 30,0,40 ],
+  tension:0.1,
+  borderWidth:2,
+}]
+};
+const config3 = {
+type: 'line',
+data: data3,
+options:{
+  maintainAspectRatio:false,
+  scales:{
+   yAxes:[{
+       display:false,
+       beginAtZero:true,
+   }],
+   xAxes:[{
+       display:false,
+   }]
+  }
+}
+};
+const myChart3 = new Chart(
+document.getElementById('myChart3'),
+config3
+);
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,1343 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,300&display=swap");
+@media (max-width: 1440px) {
+  .WorldMapBox {
+    max-width: 620px;
+  }
+  .ReportBox {
+    max-width: 270px;
+  }
+  .visitorBox {
+    max-width: 270px;
+  }
+  .visitorCenterBox {
+    max-width: 270px;
+  }
+  .MasageMenu {
+    max-width: 270px;
+  }
+  .SerchMenu {
+    max-width: 270px;
+  }
+  .UserMenu {
+    max-width: 270px;
+    border: none;
+  }
+  .WorldMapBoxImg {
+    max-width: 550px;
+    margin-left: -30px;
+  }
+  .SiteStatics {
+    max-width: 88%;
+    margin-left: -70px;
+  }
+  .statisticBoxes {
+    padding-right: 70px;
+  }
+  .headerMenus {
+    padding-right: 70px;
+    border: none;
+  }
+  .WorldSailseBox {
+    padding-right: 69px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.wrap {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  width: 20%;
+  min-height: 100vh;
+  background-color: #2980b9;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+}
+
+.row {
+  width: 80.5%;
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.menuImg {
+  width: 100%;
+  height: 143px;
+  background-color: #1b93e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menuItems {
+  width: 100%;
+  min-height: 90vh;
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menuLogos {
+  width: 100%;
+  height: 50px;
+  background-color: #1b93e1;
+  display: flex;
+  padding-left: 5px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  padding-left: 50px;
+  align-items: center;
+}
+
+.menuItem {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  color: white;
+  align-items: center;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.menuItem img {
+  width: 21px;
+  height: 21px;
+  margin: 10px;
+}
+
+#MailImg {
+  height: 15px;
+}
+
+.menuItem:hover {
+  background-color: #41a2e2;
+}
+
+header {
+  width: 100%;
+  height: 198px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 5px;
+}
+
+.headerMenus {
+  width: 100%;
+  height: 143px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.MasageMenu {
+  width: 360px;
+  height: 143px;
+  background-color: #e67e22;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.refreshBox {
+  cursor: pointer;
+}
+
+.emailBox {
+  width: 47px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+}
+
+.emailBox img {
+  width: 47px;
+  height: 29px;
+  cursor: pointer;
+}
+
+.emailMasage {
+  width: 42px;
+  height: 42px;
+  background-color: #ff0000;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  z-index: 3;
+  margin-left: -44px;
+  margin-top: -45px;
+  cursor: pointer;
+}
+
+.bellBox {
+  width: 47px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bellBox img {
+  width: 43px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.bellMasage {
+  width: 42px;
+  height: 42px;
+  background-color: #2980b9;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  z-index: 3;
+  margin-left: -36px;
+  margin-top: -45px;
+}
+
+.SerchMenu {
+  width: 360px;
+  height: 143px;
+  background-color: #e74c3c;
+  display: none;
+  align-items: center;
+  padding-left: 40px;
+  position: relative;
+}
+
+.SerchMenu p {
+  opacity: 0.5;
+  font-family: "Open Sans";
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.UserMenu {
+  width: 360px;
+  height: 143px;
+  background-color: #c0392b;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 40px;
+  position: relative;
+}
+
+.UserMenu p {
+  font-family: "Montserrat";
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.userPhoto {
+  width: 50px;
+  height: 50px;
+}
+
+.userMenu {
+  width: 24px;
+  height: 8px;
+}
+
+.userSetings {
+  width: 47px;
+  height: 46px;
+}
+
+.headerLineBox {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.headerLine {
+  width: 1156px;
+  height: 52px;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.headerLineHome {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+}
+
+.LineDashboard {
+  font-weight: 600;
+}
+
+.statisticBoxes {
+  width: 100%;
+  height: 212px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.visitorBox {
+  width: 360px;
+  height: 211px;
+  background-color: #7f8c8d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.visitorBoxLogo {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.Total {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.Visitor {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: white;
+  margin-left: 10px;
+}
+
+.totalVisitorNumber {
+  font-family: "Montserrat";
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+  position: relative;
+  top: 15%;
+}
+
+.visitorBoxNew {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 21%;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.visitorBoxNew p {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.visitorBoxNew img {
+  width: 20px;
+  height: 20px;
+}
+
+.visitorCenterBox {
+  width: 360px;
+  height: 211px;
+  background-color: #1b93e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.SiteStaticsBox {
+  width: 100%;
+  height: 621px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SiteStatics {
+  width: 91%;
+  height: 621px;
+  background-color: #34495e;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.GraphImg {
+  width: 91%;
+  height: 621px;
+  position: relative;
+  top: -50px;
+  z-index: 3;
+}
+
+.SiteStatics img {
+  width: 100%;
+  height: 621px;
+}
+
+.WorldSailseBox {
+  width: 100%;
+  height: 496px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: -20px;
+}
+
+.WorldMapBox {
+  width: 781px;
+  height: 496px;
+  background-color: #f39c12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.WorldMapBox img {
+  width: 695px;
+  height: 351px;
+}
+
+.MapBoxTop {
+  width: 100%;
+  height: 70px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  padding-left: 50px;
+}
+
+#MapLogo {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.PurpleBox {
+  width: 24px;
+  height: 24px;
+  background-color: #922856;
+  border: 1px solid #ffffff;
+}
+
+.Item {
+  width: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.MapBoxTop p {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.BlueBox {
+  width: 24px;
+  height: 24px;
+  background-color: #56d4f1;
+  border: 1px solid #ffffff;
+}
+
+.GreenBox {
+  width: 24px;
+  height: 24px;
+  background-color: #3e898e;
+  border: 1px solid #ffffff;
+}
+
+.PinkBox {
+  width: 24px;
+  height: 24px;
+  background-color: #d74b92;
+  border: 1px solid #ffffff;
+}
+
+.YellowBox {
+  width: 24px;
+  height: 24px;
+  background-color: #dfc533;
+  border: 1px solid #ffffff;
+}
+
+.OrangeBox {
+  width: 24px;
+  height: 24px;
+  background-color: #ff8f6c;
+  border: 1px solid #ffffff;
+}
+
+.MapBoxExit {
+  width: 22px;
+  height: 21px;
+  margin-top: -70px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.MapBoxExit img {
+  width: 22px;
+  height: 21px;
+}
+
+.ReportBox {
+  width: 371px;
+  height: 496px;
+  background-color: #bdc3c7;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.ReportBoxLogo {
+  width: 100%;
+  height: 30px;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ReportBoxExit {
+  width: 22px;
+  height: 21px;
+  margin-top: -15px;
+  margin-left: 55px;
+  cursor: pointer;
+}
+
+.SiteReportItems {
+  width: 100%;
+  height: 60%;
+}
+
+.SiteReportItemText {
+  width: 100%;
+  height: 10px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.SiteReportLine {
+  width: 79%;
+  height: 25px;
+  background-color: #ffffff;
+  margin-left: 40px;
+}
+
+.SiteReportGreenLine {
+  width: 65%;
+  height: 25px;
+  background-color: #27ae60;
+}
+
+.SiteReportYellowLine {
+  width: 82%;
+  height: 25px;
+  background-color: #f1c40f;
+}
+
+.SiteReportOrangeLine {
+  width: 87.5%;
+  height: 25px;
+  background-color: #d35400;
+}
+
+.Sales {
+  margin-left: -20px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+}
+
+.SalesProsent {
+  margin-left: 90px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+}
+
+.NewOrders {
+  margin-left: -7px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+}
+
+.NewOrdersProsent {
+  margin-left: 70px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000000;
+}
+
+.SiteReportText {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding-left: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.UserStatisticBoxes {
+  width: 100%;
+  height: 358px;
+  display: flex;
+  justify-content: space-around;
+}
+#myChart3{
+  height: 900px;
+  background-color: #e74c3c;
+}
+.graphBox2{
+  width:400px;
+  height: 400px;
+  display: flex;
+}
+#myChart2{
+  width:700px;
+  height:100px;
+  background-color: #1b93e1;;
+}
+.graphBox3{
+  width: 700px;
+  display: flex;
+  height: 400px;
+
+}
+.TudaySateBox {
+  width: 371px;
+  height: 458px;
+  display: flex;
+  background-image: url(./img/rectangle_12_281.png);
+  padding: 10px;
+  flex-direction: column;
+}
+
+.TudaySateBox h2 {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+}
+
+.TudaySateBoxTop {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Exit {
+  width: 22px;
+  height: 21px;
+  background-image: url(./img/close_copy_2_361.png);
+  position: relative;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.TudaySateBoxLogoes {
+  width: 250px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+}
+
+.TudaySateBoxLogoes p {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "Montserrat";
+}
+
+.PurpleOval1 {
+  width: 18px;
+  height: 18px;
+  background-color: #ff00d8;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  top: 222px;
+  left: -11px;
+}
+
+.PurpleOval2 {
+  width: 18px;
+  height: 18px;
+  background-color: #ff00d8;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  top: 140px;
+  left: 102px;
+}
+
+.PurpleOval3 {
+  width: 18px;
+  height: 18px;
+  background-color: #ff00d8;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  top: 185px;
+  left: 208px;
+}
+
+.GreenOvalBox {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 307px;
+  top: 33px;
+}
+
+.GreenOvalBox p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.GreenOval {
+  width: 18px;
+  height: 18px;
+  background-color: #0cff00;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.UsersTrendBox {
+  width: 781px;
+  height: 458px;
+  background-image: url(./img/UsersTrend.png);
+  background-size: 800px;
+  background-position: center;
+}
+
+.ExitBox {
+  width: 100%;
+  height: 50px;
+  z-index: 4;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.CelendarBoxes {
+  width: 100%;
+  height: 662px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 50px;
+}
+
+.UserCelendarMasage {
+  width: 507px;
+  height:45rem;
+  background-color: #1b93e1;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserCelendarMasageTop {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+
+.UserCelendarMasageTop p {
+  font-family: "Montserrat";
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+  top: 50px;
+}
+
+.UserCelendarMasageInp {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.UserCelendarMasageInp input {
+  width: 409px;
+  height: 66px;
+  background-color: #4db9ff;
+  border: none;
+  padding-left: 20px;
+}
+
+#BigInp {
+  width: 409px;
+  height: 196px;
+  background-color: #4db9ff;
+}
+
+.UserCelendarButtonBox {
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserCelendarMasageButton {
+  width: 409px;
+  height: 66px;
+  background-color: #4db9ff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.UserCelendarMasageButton p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.CelendarBox {
+  width: 644px;
+  height: 662px;
+  background-color: #8e44ad;
+  display: flex;
+  flex-direction: column;
+}
+
+.CelendarBoxTop {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+
+.CelendarBoxTop p {
+  font-family: "Montserrat";
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+  top: 50px;
+}
+
+.CelendarBoxItemsBox {
+  width: 100%;
+  height: 530px;
+  position: relative;
+  top: 30px;
+}
+
+.CelendarBoxMountsess {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.CelendarBoxMountsess p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.CelendarBoxMountsess img {
+  width: 12px;
+  height: 27px;
+  cursor: pointer;
+}
+
+.CelendarBoxWeek {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.CelendarBoxWeek p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.CelendarMathItems {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 80px;
+}
+
+.CelendarItem {
+  width: 75px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CelendarMathItems p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.CelendarMathItems2 {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 80px;
+  position: relative;
+  top: 50px;
+}
+
+.CelendarMathItems2 p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.CelendarMathItems3 {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 80px;
+  position: relative;
+  top: 50px;
+}
+
+.CelendarMathItems3 p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.LatestArticalesBox {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+}
+
+.LatestArticalesMenu {
+  width: 97%;
+  height: 111px;
+  display: flex;
+}
+
+.LatestArticalesMenu p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.LatestArticalesMenuItem1 {
+  width: 397px;
+  height: 111px;
+  background-color: #34495e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.LatestArticalesMenuItem2 {
+  width: 397px;
+  height: 111px;
+  background-color: #f1c40f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.LatestArticalesMenuItem3 {
+  width: 397px;
+  height: 111px;
+  background-color: #8e44ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.PersonsBox {
+  width: 97%;
+  height: 543px;
+  background-color: #e74c3c;
+  position: relative;
+}
+
+.PersonBox {
+  width: 100%;
+  height: 118px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+
+.PersonBoximg {
+  width: 118px;
+  height: 118px;
+  border: 7px solid #f1c40f;
+}
+
+.PersonBoxText {
+  width: 100%;
+  height: 118px;
+  display: flex;
+  flex-direction: column;
+}
+
+.graphLine {
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.graphBox {
+  width: 1175px;
+  height: 500px;
+  display: flex;
+}
+
+#myChart {
+  background-color: rgb(115, 114, 114);
+  color: greenyellow;
+  width: 1000px;
+  display: flex;
+}
+.FirstGraphText{
+  width: 500px;
+  height: 20px;
+  display: flex;
+  left: -1130px;
+  position: relative;
+}
+.FirstGraphText h2{
+z-index: 1;
+color: white;
+display: flex;
+}
+
+.PersonBoxLogo {
+  width: 280px;
+  height: 118px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  justify-content: space-around;
+}
+
+.FirstLogoItem {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.SecondLogoItem {
+  font-size: 20px;
+  color: white;
+}
+
+.ThirdLogoItem {
+  font-size: 24px;
+  color: white;
+}
+
+.FourthLogoItem {
+  font-size: 20px;
+  color: white;
+}
+
+.PersonBurthday {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+  left: 8px;
+}
+
+.PersonText {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+  left: 8px;
+}
+
+.PeopleBox {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 116px;
+  background-color: #292929;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.FirstFooterText {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.TwoFooterText {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footerTextBox {
+  width: 280px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.calendar {
+  width: 38rem;
+  height: 45.5rem;
+  background-color: purple;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  color: white;
+  z-index: 1;
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color:purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(33.2rem / 7);
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: rgb(184, 8, 184);
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: rgb(207, 13, 207);
+}
+.FirstGraphBoxes{
+  width: 210px;
+  height: 30px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  left: -400px;
+  top: 395px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+}
+.FirstGraphBox1{
+  width: 70px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 1;
+  background-color: #e6d122;
+}
+.FirstGraphBox2{
+  width: 70px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 1;
+  background-color: #f6ff00;
+}
